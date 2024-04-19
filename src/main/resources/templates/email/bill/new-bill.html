@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đơn hàng đã được tạo</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table td,
+        table th {
+            padding: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .body_email {
+            width: 100%;
+            margin: 16px auto;
+            max-width: 480px;
+            background: #fff;
+            border: 1px solid #dedede;
+            border-radius: 3px;
+        }
+
+        h1 {
+            background: #7f54b3;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .body_email_wrap {
+            padding: 16px 24px 32px;
+        }
+    </style>
+</head>
+<body>
+<!--<span th:fragment="vnd(value)" th:text="${#numbers.formatDecimal(#{${value}}, 3, 'POINT', 0, 'COMMA') + ' VND'}"></span>-->
+<!-------------------------------------------------------->
+<p>Dear <b th:text="${billCreated.user.name}" th:remove="tag"></b>, </p>
+<div class="body_email">
+    <h1>New bill #[[${billCreated.id}]] created!</h1>
+    <div class="body_email_wrap">
+        <h3>Thông tin khách hàng:</h3>
+        <p>
+            Họ tên: <b>[[${billCreated.user.name}]]</b> |
+            Email: <b>[[${billCreated.user.email}]]</b>
+        </p>
+        <h3>Thông tin đơn hàng</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Product name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="billItem : ${billCreated.billItems}">
+                <td th:text="${billItem.productColor.product.name}"></td>
+                <td th:text="${billItem.quantity}"></td>
+                <td><i th:replace="~{fragment::vnd(${billItem.productColor.product.price})}"></i></td>
+                <td><i th:replace="~{fragment::vnd(${billItem.quantity * billItem.productColor.product.price})}"></i></td>
+            </tr>
+            <tr style="border-top: 5px solid #eee;">
+                <td colspan="2">Coupon Code:</td>
+                <td colspan="2"><i th:replace="~{fragment::vnd(${billCreated.discountAmount})}"></i></td>
+            </tr>
+            <tr>
+                <td colspan="2">Phương thức thanh toán:</td>
+                <td colspan="2" th:text="${billCreated.payment.paymentMethod}"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Tổng cộng:</td>
+                <td colspan="2" th:text="${#numbers.formatDecimal(billCreated.totalBill, 3, 'POINT', 0, 'COMMA') + ' VND'}">
+                    <!--<i th:replace="~{fragment::vnd(${billCreated.discountAmount})}"></i>-->
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p>Đơn hàng đã được tạo, vui lòng thanh toán để hoàn thành đơn hàng.</p>
+        <p>Thân</p>
+        <p>Shop</p>
+    </div>
+</div>
+</body>
+</html>

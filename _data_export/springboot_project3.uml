@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>598bfe19-5565-47b0-9821-603e9fbd99b9.SCHEMA:springboot_project3</OriginalElement>
+  <nodes>
+    <node x="520.1961888412644" y="42.178439606145275">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.coupon</node>
+    <node x="490.1245163918659" y="772.7771192561328">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.bill_item</node>
+    <node x="-422.41991612619904" y="250.41896796391012">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.role</node>
+    <node x="643.5357634112793" y="1042.7125171939479">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.payment</node>
+    <node x="-355.824317776818" y="746.1576517150395">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user</node>
+    <node x="-634.8045170632918" y="938.1576517150395">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.customer</node>
+    <node x="-385.595598349381" y="495.539991579956">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user_role</node>
+    <node x="763.1182943603851" y="542.4454784000466">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.color</node>
+    <node x="501.7063595830626" y="532.6326429139159">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_color</node>
+    <node x="142.79442480574016" y="105.64955377395796">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.category</node>
+    <node x="-634.8045170632918" y="746.1576517150395">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.refresh_token</node>
+    <node x="135.29442480574016" y="517.380453520994">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product</node>
+    <node x="261.01074916616153" y="1042.7125171939479">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.bill</node>
+    <node x="334.84272845720847" y="346.6784396061453">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_images</node>
+    <node x="787.4070059146648" y="42.178439606145275">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.permission</node>
+    <node x="-29.406784305328244" y="823.2689133425034">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.comment</node>
+    <node x="783.9070059146648" y="346.6784396061453">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.permission_roles</node>
+    <node x="-192.78503573074732" y="386.67821912438814">598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_review</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.bill" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user" relationship="REFERENCES">
+      <point x="-58.19644380165005" y="102.93053645116925" />
+      <point x="-247.82431777681802" y="1261.643053645117" />
+      <point x="0.0" y="152.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user_role" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user" relationship="REFERENCES">
+      <point x="-7.893860263561976" y="43.90705106103417" />
+      <point x="-332.989458612943" y="748.5674002751031" />
+      <point x="-247.82431777681802" y="748.5674002751031" />
+      <point x="0.0" y="152.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_review" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product" relationship="REFERENCES">
+      <point x="90.35409833322325" y="47.8779019210038" />
+      <point x="232.79442480574016" y="550.5561210453919" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.bill" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.payment" relationship="REFERENCES">
+      <point x="106.26572951334322" y="93.66506189821166" />
+      <point x="546.99608939764" y="1252.3775790921595" />
+      <point x="546.99608939764" y="1251.1973865199452" />
+      <point x="-121.47137003553132" y="104.48486932599735" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.permission_roles" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.permission" relationship="REFERENCES">
+      <point x="0.0" y="-43.5" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.customer" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user" relationship="REFERENCES">
+      <point x="0.0" y="-56.0" />
+      <point x="-544.8045170632918" y="951.958734525447" />
+      <point x="-296.362144461825" y="951.958734525447" />
+      <point x="-48.53782668500696" y="151.5376715311777" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.refresh_token" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user" relationship="REFERENCES">
+      <point x="0.0" y="-68.0" />
+      <point x="-554.8045170632918" y="765.4910591471802" />
+      <point x="-332.2658583545347" y="765.4910591471802" />
+      <point x="-84.4415405777167" y="-144.95751416345774" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_color" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.color" relationship="REFERENCES">
+      <point x="-45.0" y="-92.0" />
+      <point x="546.7063595830625" y="549.8184319119669" />
+      <point x="853.1182943603851" y="549.8184319119669" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_images" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_color" relationship="REFERENCES">
+      <point x="76.5103781617733" y="25.544212308507497" />
+      <point x="605.7499429325994" y="415.7226519146528" />
+      <point x="605.7499429325994" y="545.185694635488" />
+      <point x="546.7063595830625" y="545.185694635488" />
+      <point x="-45.0" y="92.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.comment" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user" relationship="REFERENCES">
+      <point x="-89.08450047046281" y="-112.70163710591464" />
+      <point x="-28.49128477579106" y="952.6499444940969" />
+      <point x="-247.82431777681802" y="952.6499444940969" />
+      <point x="0.0" y="152.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_color" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product" relationship="REFERENCES">
+      <point x="-9.120103032856377" y="-17.61503631144012" />
+      <point x="582.5862565502061" y="661.5088033012379" />
+      <point x="232.79442480574016" y="661.5088033012379" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.bill_item" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_color" relationship="REFERENCES">
+      <point x="44.44592172642842" y="-103.27051678020439" />
+      <point x="588.3771781458045" y="773.5066024759284" />
+      <point x="-3.3291814372580575" y="95.30793480272769" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.comment" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product" relationship="REFERENCES">
+      <point x="-41.17408431640496" y="3.203988995873374" />
+      <point x="143.92394568363125" y="954.4729023383768" />
+      <point x="143.92394568363125" y="839.4848693259971" />
+      <point x="232.79442480574016" y="839.4848693259971" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.category" relationship="REFERENCES">
+      <point x="0.0" y="-116.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user_role" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.role" relationship="REFERENCES">
+      <point x="-6.828748280605282" y="-46.43132583030001" />
+      <point x="-331.9243466299863" y="419.6430536451168" />
+      <point x="-332.41991612619904" y="419.6430536451168" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_images" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product" relationship="REFERENCES">
+      <point x="-44.61703135377627" y="-31.20294483782368" />
+      <point x="373.7256971034322" y="386.753655641974" />
+      <point x="310.89488554909957" y="386.753655641974" />
+      <point x="310.89488554909957" y="549.8184319119669" />
+      <point x="232.79442480574016" y="549.8184319119669" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.bill_item" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.bill" relationship="REFERENCES">
+      <point x="45.0" y="-104.0" />
+      <point x="625.1245163918659" y="898.1576517150395" />
+      <point x="365.01074916616153" y="898.1576517150395" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_review" target="598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.user" relationship="REFERENCES">
+      <point x="-48.62801996113711" y="33.400597932007884" />
+      <point x="-151.41305569188444" y="664.3488216474977" />
+      <point x="-151.93259972489682" y="664.3488216474977" />
+      <point x="-151.93259972489682" y="892.4134200803533" />
+      <point x="-247.82431777681802" y="892.4134200803533" />
+      <point x="0.0" y="152.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.9008674101610905" showDependencies="false" x="158.66987620357645" y="649.6196698762035" />
+  <SelectedNodes>
+    <node>598bfe19-5565-47b0-9821-603e9fbd99b9.TABLE:springboot_project3.product_images</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

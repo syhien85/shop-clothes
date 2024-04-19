@@ -1,0 +1,2 @@
+<!-- format currency VND -->
+<i th:fragment="vnd(title)" th:text="${#numbers.formatDecimal(title, 3, 'POINT', 0, 'COMMA') + ' VND'}" th:remove="tag"></i>
